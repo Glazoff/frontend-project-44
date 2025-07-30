@@ -7,3 +7,6 @@ brain-games: #старт игры
 publish: #публикация
 	npm publish --dry-run
 
+make lint: #линт
+	npx eslint .
+	
