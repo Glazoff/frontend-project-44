@@ -5,7 +5,6 @@ import getRandomOperator from '../utils/getRandomOperator.js'
 const description = 'What is the result of the expression?'
 
 const MIN = 0
-
 const MAX = 25
 
 // helper fc
