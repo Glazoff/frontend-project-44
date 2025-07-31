@@ -3,9 +3,6 @@ import getRandomInt from '../utils/getRandomInt.js'
 
 const description = 'Find the greatest common divisor of given numbers.'
 
-const MIN = 0
-const MAX = 100
-
 function getGCD(min, max) {
   while (max !== 0) {
     const temp = max
@@ -16,8 +13,8 @@ function getGCD(min, max) {
 }
 
 function createQuestion() {
-  const int1 = getRandomInt(MIN, MAX)
-  const int2 = getRandomInt(MIN, MAX)
+  const int1 = getRandomInt()
+  const int2 = getRandomInt()
 
   const question = `${int1} ${int2}`
   const answer = `${getGCD(int1, int2)}`
