@@ -1,3 +1,6 @@
 const ROUNDS_COUNT = 3
 
-export { ROUNDS_COUNT }
+const YES = 'yes'
+const NO = 'no'
+
+export { ROUNDS_COUNT, YES, NO }
