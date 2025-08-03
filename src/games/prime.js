@@ -1,12 +1,12 @@
 import { ROUNDS_COUNT, YES, NO } from '../constants.js'
 import getRandomInt from '../utils/getRandomInt.js'
-import isEven from '../utils/isEven.js'
+import isPrime from '../utils/isPrime.js'
 
-const description = 'Answer "yes" if the number is even, otherwise answer "no".'
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 function createQuestion() {
   const question = getRandomInt()
-  const answer = isEven(question) ? YES : NO
+  const answer = isPrime(question) ? YES : NO
 
   return {
     question,
