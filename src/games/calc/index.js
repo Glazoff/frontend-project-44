@@ -1,22 +1,8 @@
-import { ROUNDS_COUNT } from '../constants.js'
-import getRandomInt from '../utils/getRandomInt.js'
-import getRandomOperator from '../utils/getRandomOperator.js'
-
-const description = 'What is the result of the expression?'
-
-const MIN = 0
-const MAX = 25
-
-// helper fc
-function calculate(a, b, operator) {
-  const expressions = {
-    '+': a + b,
-    '-': a - b,
-    '*': a * b,
-  }
-
-  return expressions[operator]
-}
+import { ROUNDS_COUNT } from '../../constants.js'
+import calculate from '../../utils/calculate.js'
+import getRandomInt from '../../utils/getRandomInt.js'
+import getRandomOperator from '../../utils/getRandomOperator.js'
+import { description, MIN, MAX } from './constants.js'
 
 function createQuestion() {
   const int1 = getRandomInt(MIN, MAX)

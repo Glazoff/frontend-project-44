@@ -1,16 +1,7 @@
-import { ROUNDS_COUNT } from '../constants.js'
-import getRandomInt from '../utils/getRandomInt.js'
-
-const description = 'Find the greatest common divisor of given numbers.'
-
-function getGCD(min, max) {
-  while (max !== 0) {
-    const temp = max
-    max = min % max
-    min = temp
-  }
-  return min
-}
+import { ROUNDS_COUNT } from '../../constants.js'
+import getGCD from '../../utils/getGCD.js'
+import getRandomInt from '../../utils/getRandomInt.js'
+import { description } from './constants.js'
 
 function createQuestion() {
   const int1 = getRandomInt()

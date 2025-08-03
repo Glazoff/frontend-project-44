@@ -1,19 +1,7 @@
-import { ROUNDS_COUNT } from '../constants.js'
-import getRandomInt from '../utils/getRandomInt.js'
-
-const description = 'What number is missing in the progression?'
-
-const LENGTH_PROGRESSION = 10
-const MAX_STEP = 8
-const MIN_STEP = 2
-const MAX_FIRST_STEP = 20
-const MIN_FIRST_STEP = 0
-const MAX_HIDDEN_INDEX = LENGTH_PROGRESSION - 1
-const HIDDEN_VALUE = '..'
-
-function createProgression(length, start, step) {
-  return Array.from({ length }, (_, i) => start + (i * step))
-}
+import { ROUNDS_COUNT } from '../../constants.js'
+import createProgression from '../../utils/createProgression.js'
+import getRandomInt from '../../utils/getRandomInt.js'
+import { MAX_STEP, MIN_STEP, MIN_FIRST_STEP, MAX_FIRST_STEP, MAX_HIDDEN_INDEX, LENGTH_PROGRESSION, HIDDEN_VALUE, description } from './constants.js'
 
 function createQuestion() {
   const step = getRandomInt(MIN_STEP, MAX_STEP)
