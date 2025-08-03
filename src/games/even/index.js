@@ -1,8 +1,7 @@
-import { ROUNDS_COUNT, YES, NO } from '../constants.js'
-import getRandomInt from '../utils/getRandomInt.js'
-import isEven from '../utils/isEven.js'
-
-const description = 'Answer "yes" if the number is even, otherwise answer "no".'
+import { ROUNDS_COUNT, YES, NO } from '../../constants.js'
+import getRandomInt from '../../utils/getRandomInt.js'
+import isEven from '../../utils/isEven.js'
+import { description } from './constants.js'
 
 function createQuestion() {
   const question = getRandomInt()
